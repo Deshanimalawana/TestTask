@@ -1,0 +1,32 @@
+###Protected Route
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTAyNTMwNjgsImV4cCI6MTcxMDI1NjY2OCwiYXVkIjoiNjVmMDY0MGNmNmEwYmNmMWZhMjhjNDk3IiwiaXNzIjoibmV3Z29vZ2xlLmNvbSJ9.5dnyHyYcO2YG5zay6h7yG7d0IdhWjNBlwseah-dpSnA
+
+
+###Login Route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"user2@gmail.com",
+    "password":"1232334"
+}
+
+
+###Register Route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"user2@gmail.com",
+    "password":"1232334"
+}
+
+###Refresh token Route
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTAyNTMxMTIsImV4cCI6MTc0MTgxMDcxMiwiYXVkIjoiNjVmMDY0MzhmNmEwYmNmMWZhMjhjNDlhIiwiaXNzIjoibmV3Z29vZ2xlLmNvbSJ9.k1arKIRKhST1Rr7lyB8-bUmXMcFbFEk0OeNd2lDe1Cc"
+}
+
